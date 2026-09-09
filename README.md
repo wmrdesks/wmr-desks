@@ -28,12 +28,17 @@ WMR Desks separates trading, fee accounting, reward execution, backing, distribu
 
 ```mermaid
 flowchart LR
-    A[PONs trade] --> B[Dedicated fee vault]
-    B --> C[Verified reward purchase]
-    C --> D[Backing reconciliation]
-    D --> E[Holder distribution]
-    E --> F[Protected cashout]
-    F --> G[Source-route settlement]
+    T[PONs buy or sell] --> F[3% trade fee]
+    F --> P[0.3% PONs]
+    F --> I[1.8% infrastructure]
+    F --> R[0.7% reward vault]
+    F --> B[0.2% WMR buyback + burn]
+    R --> Q[Verified reward route]
+    Q --> C[Backed custody or direct settlement]
+    C --> W[Wrapped rewards on Robinhood Chain]
+    W --> X[WMR cashout request]
+    X --> S[Source-route settlement]
+    S --> U[Protected output to holder]
 ```
 
 This separation keeps trading liquidity independent from reward-wrapper liquidity and gives wallets, terminals and auditors a clear contract boundary at each step. See the [full architecture](docs/ARCHITECTURE.md) for the complete fee split, route model and chain-specific settlement design.
