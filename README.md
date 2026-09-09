@@ -2,11 +2,23 @@
   <img src="assets/brand/wmr-logo.png" width="92" alt="WMR Desks logo">
 </p>
 
-# WMR Desks
+# WMR Desks V1
 
 **Launch coins. Route fees. Reward holders.**
 
-WMR Desks is reward infrastructure for PONs launches on Robinhood Chain. A launch can send part of its trading fee to a dedicated desk. The desk buys a selected reward asset and distributes a backed representation to eligible holders.
+WMR Desks V1 is an onchain reward layer built for PONs launches. It converts a defined share of every buy and sell into the reward asset selected by the creator, accounts for eligible holders, and delivers fully backed rewards on Robinhood Chain.
+
+The product brings launch, fee routing, reward acquisition, distribution and cashout into one verifiable lifecycle. Its multichain settlement architecture connects PONs communities with supported assets on Robinhood Chain, Ethereum, BNB Chain and Solana while preserving route-specific custody and redemption. Holders receive rewards automatically at their eligible wallet address and can redeem them through WMR's protected cashout flow.
+
+## Product capabilities
+
+- **Launch with rewards:** create a PONs coin and its dedicated reward desk in one guided flow.
+- **Route an existing coin:** connect an eligible PONs launch after the authorized creator-fee recipient approves the route.
+- **Choose across networks:** select a registered reward asset from a verified Robinhood Chain, Ethereum, BNB Chain or Solana route.
+- **Reward every eligible holder:** calculate proportional distributions from published onchain snapshots rather than a fixed wallet list.
+- **Keep rewards backed:** mint wrapped rewards only against reconciled purchases and custody or direct-settlement records.
+- **Exit with protection:** redeem through a route-specific cashout request with minimum-output and deadline controls.
+- **Integrate anywhere:** give wallets and trading terminals the public registry, ABIs and transaction flow required to surface WMR rewards natively.
 
 [Website](https://wmrdesks.app) · [Architecture](docs/ARCHITECTURE.md) · [Terminal integration](docs/TERMINAL_INTEGRATION.md) · [Contracts](docs/CONTRACTS.md)
 
@@ -76,4 +88,3 @@ Wimmy ("WIM-ee") is the movable WMR guide. The CRT eyes watch the route, the che
 ## License
 
 Documentation, examples and brand integration assets are available under the [MIT License](LICENSE). WMR and related brand marks remain trademarks of their respective owner.
-
