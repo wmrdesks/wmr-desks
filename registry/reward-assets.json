@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "network": {
+    "name": "Robinhood Chain",
+    "chainId": 4663,
+    "rpc": "https://rpc.mainnet.chain.robinhood.com",
+    "explorer": "https://robinhoodchain.blockscout.com"
+  },
+  "contracts": {
+    "ponsFactory": "0x7eD598BcEf8bd9Edd8C97A195C6d13f40801EC7e",
+    "ponsLaunchAndBuy": "0xe33E9E479dF8802cb0866d5d05258bEc4cF62948",
+    "ponsFeeEscrow": "0xd3AFEB2a57f70eF218Aa82451c51B2fb0416Ac9e",
+    "hostedDeskFactory": "0x9a40ba06b8b7903a032fd0ffc4d81b857cdcb8cc"
+  },
+  "rewardAssets": [
+    {
+      "symbol": "PONS",
+      "assetId": "0x00000000000000000000000039dBED3a2bd333467115dE45665cC57F813C4571",
+      "wrapper": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "enabled": true
+    },
+    {
+      "symbol": "CASHCAT",
+      "assetId": "0x000000000000000000000000020bfC650A365f8BB26819deAAbF3E21291018b4",
+      "wrapper": "0x020bfC650A365f8BB26819deAAbF3E21291018b4",
+      "enabled": true
+    },
+    {
+      "symbol": "PIPEDOG",
+      "assetId": "0x0000000000000000000000005Cb6F181081301b44905F3ae15419112ecaBd8A6",
+      "wrapper": "0x5Cb6F181081301b44905F3ae15419112ecaBd8A6",
+      "enabled": true
+    },
+    {
+      "symbol": "AI",
+      "assetId": "0x0000000000000000000000002E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+      "wrapper": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+      "enabled": true
+    },
+    {
+      "symbol": "GOOD",
+      "assetId": "0x0000000000000000000000005f62C57e5C537887117EeF828b7E3Ad41C009FEb",
+      "wrapper": "0x5f62C57e5C537887117EeF828b7E3Ad41C009FEb",
+      "enabled": true
+    },
+    {
+      "symbol": "ROBIN",
+      "assetId": "0x00000000000000000000000011B70d0243baf75E85CE03201A92b5B7C33BEB59",
+      "wrapper": "0x11B70d0243baf75E85CE03201A92b5B7C33BEB59",
+      "enabled": true
+    },
+    {
+      "symbol": "WETH",
+      "assetId": "0x0000000000000000000000000Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+      "wrapper": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+      "enabled": true
+    },
+    {
+      "symbol": "USDG",
+      "assetId": "0x0000000000000000000000005fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "wrapper": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "enabled": true
+    },
+    {
+      "symbol": "LINK",
+      "assetId": "0x000000000000000000000000492641F648a4986844848E0beFE66D14817bCE34",
+      "wrapper": "0x492641F648a4986844848E0beFE66D14817bCE34",
+      "enabled": true
+    },
+    {
+      "symbol": "cbBTC",
+      "assetId": "0x000000000000000000000000CEC185eB182c47d1bA1EFc84e6959e18cd620Be4",
+      "wrapper": "0xCEC185eB182c47d1bA1EFc84e6959e18cd620Be4",
+      "enabled": true
+    },
+    {
+      "symbol": "USDe",
+      "assetId": "0x0000000000000000000000005d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "wrapper": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "enabled": true
+    },
+    {
+      "symbol": "VIRTUAL",
+      "assetId": "0x000000000000000000000000c6911796042b15d7Fa4F6CDe69e245DdCd3d9c31",
+      "wrapper": "0xc6911796042b15d7Fa4F6CDe69e245DdCd3d9c31",
+      "enabled": true
+    },
+    {
+      "symbol": "wB",
+      "assetId": "0x0000000000000000000000006bdcCe4A559076e37755a78Ce0c06214E59e4444",
+      "wrapper": "0x3281aEeeE69e8374C0A00e68A03B830f1dFeDCE8",
+      "enabled": true
+    },
+    {
+      "symbol": "wBABYDOGE",
+      "assetId": "0x000000000000000000000000c748673057861a797275CD8A068AbB95A902e8de",
+      "wrapper": "0x3B41c946318315fcc0e641708609EA86162bfB6C",
+      "enabled": true
+    },
+    {
+      "symbol": "w\u5e01\u5b89\u4eba\u751f",
+      "assetId": "0x000000000000000000000000924fa68a0FC644485b8df8AbfA0A41C2e7744444",
+      "wrapper": "0xa6DFeF49D561eC389B966467dfeF86D2DDf3755F",
+      "enabled": true
+    },
+    {
+      "symbol": "wBNB",
+      "assetId": "0x8e72dc14e8b57075bbd938e5e3651a096008e9416e2e9ab353d272900d51c401",
+      "wrapper": "0xFd81201B1Cd45a72969083C5C1D8c8ECC07960a3",
+      "enabled": true
+    },
+    {
+      "symbol": "wMUBARAK",
+      "assetId": "0x0000000000000000000000005C85D6C6825aB4032337F11Ee92a72DF936b46F6",
+      "wrapper": "0xFFC8fdAcbe98DEa18857e7b6DD67ABB5549c7806",
+      "enabled": true
+    },
+    {
+      "symbol": "wSIREN",
+      "assetId": "0x000000000000000000000000997A58129890bBdA032231A52eD1ddC845fc18e1",
+      "wrapper": "0x47FDdA936d7dd17785183c627A1577Dd86e83f36",
+      "enabled": true
+    },
+    {
+      "symbol": "wTST",
+      "assetId": "0x00000000000000000000000086Bb94DdD16Efc8bc58e6b056e8df71D9e666429",
+      "wrapper": "0x6Ec19138c45Ee9B16bDd21453F7E9C61C19fb6b8",
+      "enabled": true
+    },
+    {
+      "symbol": "wETH",
+      "assetId": "0x16924a1160b947259ebdeabc05b158a63ce867081d5ad771f9094f9eb4b6102a",
+      "wrapper": "0x037F173254b6F22F050fC8Fe2F0eaD31B9df0e11",
+      "enabled": true
+    },
+    {
+      "symbol": "wMOG",
+      "assetId": "0x000000000000000000000000aaeE1A9723aaDB7afA2810263653A34bA2C21C7a",
+      "wrapper": "0x0F4B15AE8f292693d0A1bff832014F0F0388C883",
+      "enabled": true
+    },
+    {
+      "symbol": "wNPC",
+      "assetId": "0x0000000000000000000000008eD97a637A790Be1feff5e888d43629dc05408F6",
+      "wrapper": "0x6b9f4c745F5CF97DFf8A5DEcEfB4eb1696ebf5E4",
+      "enabled": true
+    },
+    {
+      "symbol": "wPEPE",
+      "assetId": "0x0000000000000000000000006982508145454Ce325dDbE47a25d4ec3d2311933",
+      "wrapper": "0x8Ce8e240B312574a2424468d69d4bb10845b82bA",
+      "enabled": true
+    },
+    {
+      "symbol": "wSHIB",
+      "assetId": "0x00000000000000000000000095aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE",
+      "wrapper": "0xe3AB8A2E3e5f16f6b39e302d96ceE2413e787f5b",
+      "enabled": true
+    },
+    {
+      "symbol": "wSPX",
+      "assetId": "0x000000000000000000000000E0f63A424a4439cBE457D80E4f4b51aD25b2c56C",
+      "wrapper": "0x8E5f28602e82e5b2A7162eB7F032726b94c17Ed3",
+      "enabled": true
+    },
+    {
+      "symbol": "wTURBO",
+      "assetId": "0x000000000000000000000000A35923162C49cF95e6BF26623385eb431ad920D3",
+      "wrapper": "0x6Bafb0eaE5b8F5c5e848Ce233001d0E282B5b3A2",
+      "enabled": true
+    },
+    {
+      "symbol": "wWBTC",
+      "assetId": "0x0000000000000000000000002260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "wrapper": "0xB1cA97372baFb6FFE0e5655F03ede133F58C9c75",
+      "enabled": true
+    },
+    {
+      "symbol": "wANSEM",
+      "assetId": "0x7ff030b343fca3d856816953ba2da02e154fd1da2908922d473ef39827c2d03f",
+      "wrapper": "0x91451178aB5464Ee128B67403319223f73F16e39",
+      "enabled": false
+    },
+    {
+      "symbol": "wBONK",
+      "assetId": "0xbc07c56e60ad3d3f177382eac6548fba1fd32cfd90ca02b3e7cfa185fdce7398",
+      "wrapper": "0x68775cb34f899F640549c00EcF8baCFf9982BC51",
+      "enabled": true
+    },
+    {
+      "symbol": "wCATE",
+      "assetId": "0x903fc0c38dece54a3187cbf329e4b70e23ef9f4a3e62dde10a5a86288718473f",
+      "wrapper": "0x7c980d386222a3c062dF690E3d285e2976e808A8",
+      "enabled": false
+    },
+    {
+      "symbol": "wCHILLGUY",
+      "assetId": "0xbc0f127880a7a207b345369ba67175bdb7f798134571eb5de817cedbbbd5ddff",
+      "wrapper": "0xdD799Bf06f4a6F6aC433d1Fff160DF6427988cb8",
+      "enabled": false
+    },
+    {
+      "symbol": "wFARTCOIN",
+      "assetId": "0x7978b714453cd3e87aeb1fc09bf067f96cd2d4d69b571395aa9bf186aff9da3f",
+      "wrapper": "0xDeB61F5735641bdfc71D772A19c1118d71269a6C",
+      "enabled": false
+    },
+    {
+      "symbol": "wFONE",
+      "assetId": "0xaa3372c7d8ee2284233810ed912e364a30a9d809d1df4baafb2a008041b88a9f",
+      "wrapper": "0x5F6218Df1deb05b3b1b5695C7dCD491997E9c6b4",
+      "enabled": false
+    },
+    {
+      "symbol": "wJIMOTH",
+      "assetId": "0xe861d494d1b60e36a2957af46f898e84ce8eb086b89ced37a53a32ed5a9f820f",
+      "wrapper": "0x6f5865B2B18B034FbeE533384425220aeC06e880",
+      "enabled": false
+    },
+    {
+      "symbol": "wPENGU",
+      "assetId": "0x1d8ccf87ac0147bae756eb963a2ef6244c9691569a8ec08f0020a2eb8fbdb5a1",
+      "wrapper": "0x43E550D6e8dc16e3b8eD75Aa7E0d74fD10ac70cf",
+      "enabled": false
+    },
+    {
+      "symbol": "wPENGUIN",
+      "assetId": "0x6c9b02aed35ef833c145039b2ec0c90ffb0639fe16fea307dcf76276e5a19cbf",
+      "wrapper": "0x4f8C3F0b1f2462D82c43679D37449D6d62dBc312",
+      "enabled": false
+    },
+    {
+      "symbol": "wTRIPLET",
+      "assetId": "0xfe7b1e552e061bd12c728e73b2b7dd3bbbf699b6d4a4cb719ed65ecf80a0b58f",
+      "wrapper": "0x106A95e5fb62E1C48c4F0Fa0fCc2F8d5649b9224",
+      "enabled": false
+    },
+    {
+      "symbol": "wTROLL",
+      "assetId": "0x427845f6c4fb39065ee4e57dea9e3f92bfdac6d75a25e852297e883298278cbd",
+      "wrapper": "0x26B8F7D3cF7a6e9565F029047e5968448Eb4D574",
+      "enabled": false
+    },
+    {
+      "symbol": "wTRUMP",
+      "assetId": "0x565b78baec5bd6ff06633318ea20e7f6398d2f3280e8f7f8c3804e288e78a78d",
+      "wrapper": "0x49DB1F22AF7AA494eAA42841929017022302e5B0",
+      "enabled": false
+    },
+    {
+      "symbol": "wUSELESS",
+      "assetId": "0xc0f042aaac9f823746cc10e104d3635591cf2d7a3471ae6f0727c08fdb274d85",
+      "wrapper": "0x819121e103C473523d7616024709484027E0037B",
+      "enabled": false
+    },
+    {
+      "symbol": "wWIF",
+      "assetId": "0xc5f9fb32f49111ab20c33f2598fc836c113e291881ac21ee29169394011244e4",
+      "wrapper": "0x731B5cB0F18ecEc45dD5228DC5E6eba5b1C9966F",
+      "enabled": false
+    },
+    {
+      "symbol": "wWOJAK",
+      "assetId": "0x6c6282257faa4bf969d347e201333e8a6acae5f55e07b25b4e650ecbabf79f9f",
+      "wrapper": "0x727cC41f57B10E9AF2cbBEeF26D6627BC5d52B39",
+      "enabled": false
+    },
+    {
+      "symbol": "wZCAT",
+      "assetId": "0xf6cdd6970774d677406494c646f7e70a3ac79868a02600f343a76dc95e892156",
+      "wrapper": "0xB4D792Fc254B6F5F1e7d4305BA7A9Cb3655F6573",
+      "enabled": false
+    }
+  ]
+}

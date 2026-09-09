@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" role="img" aria-labelledby="title desc">
+  <title id="title">Wimmy, the WMR guide</title>
+  <desc id="desc">A small lime and charcoal robot with a CRT face and WMR chest mark.</desc>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000" flood-opacity=".42"/></filter>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9ff3f"/><stop offset="1" stop-color="#84aa10"/></linearGradient>
+  </defs>
+  <g filter="url(#shadow)" stroke="#0d100a" stroke-width="8" stroke-linejoin="round">
+    <path fill="#a9d31c" d="M105 35V18h30v17"/>
+    <circle cx="120" cy="14" r="10" fill="#d9ff3f"/>
+    <path fill="url(#shell)" d="M49 64Q49 35 78 35h84q29 0 29 29v75q0 29-29 29H78q-29 0-29-29z"/>
+    <rect x="66" y="54" width="108" height="84" rx="24" fill="#131612"/>
+    <path d="M89 89l13 12-13 12M118 113h31" fill="none" stroke="#d9ff3f" stroke-width="10" stroke-linecap="round"/>
+    <path fill="url(#shell)" d="M80 157h80l15 72q3 17-14 17H79q-17 0-14-17z"/>
+    <path d="M75 175 40 201q-12 8-19-4-6-11 6-18l41-25M165 175l35 26q12 8 19-4 6-11-6-18l-41-25" fill="url(#shell)"/>
+    <path d="M92 244v10M148 244v10" stroke="#0d100a" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <text x="120" y="214" text-anchor="middle" font-family="ui-monospace,monospace" font-size="29" font-weight="900" fill="#10130c">WMR</text>
+</svg>

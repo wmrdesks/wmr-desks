@@ -1,0 +1,12 @@
+{
+  "name": "wmr-terminal-integration-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check index.js"
+  },
+  "dependencies": {
+    "viem": "^2.37.0"
+  }
+}
+
