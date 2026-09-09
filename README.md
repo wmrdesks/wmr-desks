@@ -10,6 +10,8 @@ WMR Desks V1 is an onchain reward layer built for PONs launches. It converts a d
 
 The product brings launch, fee routing, reward acquisition, distribution and cashout into one verifiable lifecycle. Its multichain settlement architecture connects PONs communities with supported assets on Robinhood Chain, Ethereum, BNB Chain and Solana while preserving route-specific custody and redemption. Holders receive rewards automatically at their eligible wallet address and can redeem them through WMR's protected cashout flow.
 
+[Website](https://wmrdesks.app) · [Architecture](docs/ARCHITECTURE.md) · [Terminal integration](docs/TERMINAL_INTEGRATION.md) · [Contracts](docs/CONTRACTS.md)
+
 ## Product capabilities
 
 - **Launch with rewards:** create a PONs coin and its dedicated reward desk in one guided flow.
@@ -20,7 +22,21 @@ The product brings launch, fee routing, reward acquisition, distribution and cas
 - **Exit with protection:** redeem through a route-specific cashout request with minimum-output and deadline controls.
 - **Integrate anywhere:** give wallets and trading terminals the public registry, ABIs and transaction flow required to surface WMR rewards natively.
 
-[Website](https://wmrdesks.app) · [Architecture](docs/ARCHITECTURE.md) · [Terminal integration](docs/TERMINAL_INTEGRATION.md) · [Contracts](docs/CONTRACTS.md)
+## Architecture at a glance
+
+WMR Desks separates trading, fee accounting, reward execution, backing, distribution and settlement so every stage can be inspected independently. PONs continues to handle the coin's native market. WMR receives the dedicated fee stream, records its fixed allocation, purchases the selected reward asset through a verified route, reconciles the backing, and delivers the corresponding wrapped reward to eligible holders. Cashout is a separate protected settlement path that burns the wrapper before releasing its backing.
+
+```mermaid
+flowchart LR
+    A[PONs trade] --> B[Dedicated fee vault]
+    B --> C[Verified reward purchase]
+    C --> D[Backing reconciliation]
+    D --> E[Holder distribution]
+    E --> F[Protected cashout]
+    F --> G[Source-route settlement]
+```
+
+This separation keeps trading liquidity independent from reward-wrapper liquidity and gives wallets, terminals and auditors a clear contract boundary at each step. See the [full architecture](docs/ARCHITECTURE.md) for the complete fee split, route model and chain-specific settlement design.
 
 ## Fee flow
 
