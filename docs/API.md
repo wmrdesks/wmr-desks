@@ -1,6 +1,6 @@
 # Protocol API
 
-The hosted API is in private funded testing. This document defines the integration surface so terminal teams can build against stable response shapes. Public credentials are intentionally absent from this repository.
+Public read endpoints provide protocol, desk and route information. The current `/status` response identifies new-launch economics as version 2. A registered route can still be temporarily unavailable; check fresh responses. Private credentials are intentionally absent from this repository.
 
 Base URL: `https://wmrdesks.app/api/protocol`
 
@@ -48,5 +48,5 @@ The production response supplies the router, protected minimum, deadline and req
 - Do not use JavaScript numbers for onchain amounts.
 - A `200` quote is preparation, not proof of settlement.
 - Track the signed transaction and the resulting cashout request separately.
-- During private testing, request integration access from the WMR team. Never embed shared credentials in a frontend bundle.
+- Never embed shared credentials in a frontend bundle. User-authorized writes and any restricted integration endpoints must follow their current authentication requirements.
 

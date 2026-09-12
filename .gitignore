@@ -9,3 +9,13 @@ dist/
 *.keystore
 *.log
 
+.wrangler/
+deployments/
+releases/
+*.sqlite
+*.sqlite-*
+*.db
+*.env
+credentials*
+*private-key*
+*seed-phrase*

@@ -6,9 +6,9 @@ WMR Desks separates trading, accounting, reward execution and settlement so each
 flowchart LR
     T[PONs buy or sell] --> F[3% trade fee]
     F --> P[0.3% PONs]
-    F --> I[1.8% infrastructure]
-    F --> R[0.7% reward vault]
-    F --> B[0.2% WMR buyback + burn]
+    F --> I[0.1% payout reserve]
+    F --> R[0.9% holder reward purchases]
+    F --> B[1.7% official WMR buyback + burn]
     R --> Q[Verified reward route]
     Q --> C[Backed custody or direct settlement]
     C --> W[Wrapped rewards on Robinhood Chain]
@@ -16,6 +16,8 @@ flowchart LR
     X --> S[Source-route settlement]
     S --> U[Protected output to holder]
 ```
+
+The diagram shows the current **new-launch** split. Existing desks retain their original fee version; see [fee schedules](FEES.md).
 
 ## Components
 

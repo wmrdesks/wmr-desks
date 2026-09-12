@@ -2,11 +2,11 @@
   <img src="assets/brand/wmr-logo.png" width="92" alt="WMR Desks logo">
 </p>
 
-# WMR Desks V1
+# WMR Desks
 
 **Launch coins. Route fees. Reward holders.**
 
-WMR Desks V1 is an onchain reward layer built for PONs launches. It converts a defined share of every buy and sell into the reward asset selected by the creator, accounts for eligible holders, and delivers fully backed rewards on Robinhood Chain.
+WMR Desks is an onchain reward layer built for PONs launches. It converts a defined share of every buy and sell into the reward asset selected by the creator, accounts for eligible holders, and delivers fully backed rewards on Robinhood Chain.
 
 The product brings launch, fee routing, reward acquisition, distribution and cashout into one verifiable lifecycle. Its multichain settlement architecture connects PONs communities with supported assets on Robinhood Chain, Ethereum, BNB Chain and Solana while preserving route-specific custody and redemption. Holders receive rewards automatically at their eligible wallet address and can redeem them through WMR's protected cashout flow.
 
@@ -30,9 +30,9 @@ WMR Desks separates trading, fee accounting, reward execution, backing, distribu
 flowchart LR
     T[PONs buy or sell] --> F[3% trade fee]
     F --> P[0.3% PONs]
-    F --> I[1.8% infrastructure]
-    F --> R[0.7% reward vault]
-    F --> B[0.2% WMR buyback + burn]
+    F --> I[0.1% payout reserve]
+    F --> R[0.9% holder reward purchases]
+    F --> B[1.7% official WMR buyback + burn]
     R --> Q[Verified reward route]
     Q --> C[Backed custody or direct settlement]
     C --> W[Wrapped rewards on Robinhood Chain]
@@ -45,16 +45,16 @@ This separation keeps trading liquidity independent from reward-wrapper liquidit
 
 ## Fee flow
 
-Every buy and sell carries a 3% total fee:
+For new coins launched through the current WMR V2 hosted factory, each buy and sell carries the same 3% total fee:
 
 | Allocation | Share of trade | Purpose |
 | --- | ---: | --- |
 | PONs | 0.3% | Platform fee |
-| Infrastructure | 1.8% | Operations, execution, audits, gas and development |
-| Holder rewards | 0.7% | Purchases the selected reward asset |
-| WMR buyback + burn | 0.2% | Buys WMR and sends it to the permanent burn address |
+| Payout reserve | 0.1% | Supplemental reserve funding, periodically converted to USDG |
+| Holder rewards | 0.9% | Purchases the selected reward asset |
+| Official WMR buyback + burn | 1.7% | Buys official WMR and sends it to the permanent burn address |
 
-The percentages describe the total trade amount. They sum to 3%.
+The percentages describe the total trade amount. They sum to 3%; they are not guaranteed holder returns. Existing desks retain their original immutable fee schedules. See [fee versions](docs/FEES.md).
 
 ## How it works
 
@@ -63,7 +63,7 @@ The percentages describe the total trade amount. They sum to 3%.
 3. The indexer calculates eligible balances at a published snapshot block.
 4. Collected reward fees buy the selected asset through its verified route.
 5. Backed wrapped rewards arrive at eligible Robinhood Chain addresses.
-6. A holder exits through the WMR cashout router. The router burns the wrapper, settles the backing route, and pays the protected output to the chosen recipient.
+6. A holder exits through the WMR cashout router. At protected settlement, the router pays USDG and burns the redeemed wrapper in the same transaction. The service then sells the matching source backing and bridges proceeds to replenish the reserve.
 
 WMR does not create low-liquidity wrapper pools. A generic DEX swap cannot redeem a wrapper by itself. Wallets and terminals should expose the WMR cashout action described in [Terminal integration](docs/TERMINAL_INTEGRATION.md).
 
@@ -87,7 +87,7 @@ WMR does not create low-liquidity wrapper pools. A generic DEX swap cannot redee
 
 ## Integration status
 
-The contracts and registered routes listed here are deployed on Robinhood Chain. Integrators must query current route availability and obtain a fresh quote before allowing a cashout. The hosted protocol API remains private during the funded test period; no credential is committed to this repository.
+The contracts and registered routes listed here are deployed on Robinhood Chain. Integrators must query current route availability and obtain a fresh quote before allowing a cashout. Public read endpoints expose protocol and route information. Availability is checked at request time; no private API credentials or signing material belong in this repository.
 
 ## Security
 
